@@ -80,7 +80,7 @@ async function openBirthday() {
     'É VOCÊ MESMOOO, EMI!!!',
     'tá, agora finge surpresa rapidinho',
     'fiz isso aqui pra te dar parabéns do meu jeito.',
-    'FELIZ NIVER, PÔ!!! gosto muito de tu ♡'
+    'FELIZ NIVER, EMI!!! agora bora pro vídeo kkkkk'
   ];
   for (let i = 0; i < lines.length; i++) {
     await delay(i === 0 ? 450 : 760);
