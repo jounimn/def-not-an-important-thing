@@ -10,3 +10,6 @@ body.pink{color-scheme:light;--bg:#f7dce5;--ink:#4a2637;--muted:#805d6d;--panel:
 
 .intro h1{font-style:italic}.birthday-hero h1{font-style:italic;color:var(--berry)}.section-heading h2{font-style:italic}.promo-copy h2{font-style:italic}
 .boot-copy,.terminal-heading,.birthday-log,.intro p,.hero-bottom p,.promo-description,.receipt,.pricing>p,.birthday-footer p{font-size:12px}.terminal-hint{font-size:10px}.hero-bottom p,.promo-description{max-width:45ch}.video-note .sound-note{font-size:10px}
+.terminal-hint,.login-bottom,.window-footer{font-size:12px}.window-footer{flex-wrap:wrap}
+.video-note>p:first-of-type{font-style:italic}
+.hero-top,.mascot-caption,.message-command,.file-label,.outlined-tag,.video-note>span:not(.note-pin),.video-note .sound-note,.skip-button,.promo-disclaimer,.promo-copy .file-label,.footer-sign,.top-actions,.text-control,.window-bar,.boot-progress,.sound-note,.video-error,.purchase-response p,.purchase-response strong,.art-caption,.oil-stamp,.pricing>p>span{font-size:12px}.message-command{overflow-wrap:anywhere}.hero-top>span{min-width:0}

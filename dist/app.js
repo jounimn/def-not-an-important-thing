@@ -150,6 +150,7 @@ $('skip-video').addEventListener('click', revealPromo);
 $('buy-button').addEventListener('click', () => {
   clearTimeout(toastTimer);
   $('purchase-response').hidden = false;
+  $('purchase-detail').textContent = 'Saldo debitado: 1 abraço. Seu azeite imaginário chega em até 3 vidas úteis.';
   $('buy-button').textContent = 'Azeite imaginário garantido ♡';
   burst();
   toastTimer = setTimeout(() => { $('purchase-response').hidden = true; }, 12000);
