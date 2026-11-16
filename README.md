@@ -8,4 +8,4 @@ The supplied credentials are a playful client-side puzzle, not secure authentica
 
 Run `node verify.mjs` for browser flow checks (requires the df-design Playwright installation and Microsoft Edge on this machine). Run `node motion-review.mjs` for wheel-driven motion evidence. Test credentials are read from the app locally and never logged.
 
-Work is on `feat/emi-birthday`. GitHub PR creation is currently unavailable because the configured GitHub token is invalid; re-authentication is required before a PR can be opened. The Sites source remote is a deployment mirror, not a GitHub PR provider.
+The informal Portuguese copy revision is on `feat/emi-copy-informal` and is reviewed through a GitHub pull request. GitHub authentication was verified successfully on 2026-11-16. This revision is kept local for the author's review; the previously hosted Sites version is unchanged.

@@ -27,7 +27,7 @@ try {
  await page.locator('#username').press('Enter');
  await page.locator('#password').fill('wrong-password');
  await page.locator('#password').press('Enter');
- await page.locator('#login-error').filter({hasText:'não conferem'}).waitFor();
+ await page.locator('#login-error').filter({hasText:'não bateu'}).waitFor();
  assert.equal(await page.locator('#birthday-screen').isVisible(),false);pass('Incorrect credentials recover without entering birthday');
  const source=readFileSync('dist/app.js','utf8');
  const user=source.match(/value\.trim\(\) === '([^']+)'/)[1];
@@ -62,7 +62,7 @@ try {
  await page.screenshot({path:'captures/finale-phone.png',fullPage:true});
  await page.locator('#buy-button').click();
  await page.locator('#purchase-response').waitFor({state:'visible'});
- assert.match(await page.locator('#purchase-response').innerText(),/aprovado em carinho/);
+ assert.match(await page.locator('#purchase-response').innerText(),/comprou mesmo/);
  await page.keyboard.press('Escape');
  assert.equal(await page.locator('#purchase-response').isVisible(),false);pass('Fake purchase responds; Escape dismisses');
  await page.locator('#replay-button').click();
