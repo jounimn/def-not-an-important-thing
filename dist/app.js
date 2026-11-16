@@ -11,7 +11,7 @@ let confettiTimer;
 function setMotion(off) {
   motionOff = off;
   document.body.classList.toggle('motion-off', off);
-  $('motion-toggle').textContent = `animação: ${off ? 'off' : 'on'}`;
+  $('motion-toggle').textContent = `movimento: ${off ? 'não' : 'sim'}`;
   $('motion-toggle').setAttribute('aria-pressed', String(off));
   if (off) $('confetti').replaceChildren();
 }
@@ -37,19 +37,19 @@ $('login-form').addEventListener('submit', async (event) => {
     $('password-step').hidden = false;
     $('password').required = true;
     $('username-row').querySelector('button').hidden = true;
-    $('login-hint').textContent = 'agora a senha. o presente está quase aí.';
+    $('login-hint').textContent = 'agora aquela senha lá. tá quase kkk';
     $('password').focus();
     return;
   }
   if (!correctCredentials()) {
-    $('login-error').textContent = 'Ops. Usuário ou senha não conferem. Tenta de novo?';
+    $('login-error').textContent = 'Ih, não bateu. Confere o usuário e tenta a senha de novo.';
     $('password').value = '';
     $('password').focus();
     return;
   }
   phase = 'booting';
   document.body.classList.add('is-loading');
-  $('login-hint').textContent = 'acesso autorizado. ativando modo aniversário...';
+  $('login-hint').textContent = 'YAYYY!!!$@ aí sim, acertou kkkkk';
   $('password').value = '';
   await delay(550);
   document.body.classList.remove('is-loading');
@@ -62,7 +62,7 @@ async function openBirthday() {
   document.body.classList.add('pink');
   document.querySelector('meta[name="theme-color"]').content = '#f7dce5';
   document.title = 'Feliz aniversário, Emi! ♡';
-  $('system-status').textContent = 'modo aniversário';
+  $('system-status').textContent = 'é teu niver, pô!';
   $('login-screen').hidden = true;
   $('birthday-screen').hidden = false;
   $('video-section').hidden = true;
@@ -71,16 +71,16 @@ async function openBirthday() {
   $('birthday-log').replaceChildren();
   $('progress-fill').style.transform = 'scaleX(0)';
   $('progress-percent').textContent = '0%';
-  $('progress-label').textContent = 'carregando coisas boas...';
+  $('progress-label').textContent = 'calma aí, não sai não';
   window.scrollTo({top: 0, behavior: 'instant'});
   $('motion-toggle').focus({preventScroll: true});
   burst();
   const lines = [
-    '✓ identidade confirmada: pessoa de milhões',
-    '✓ tema rosa instalado com sucesso',
-    '✓ carinho.exe rodando em segundo plano',
-    'Que não faltem risadas, abraços e dias leves.',
-    'Feliz aniversário, Emi. Você merece o mundo. ♡'
+    'YAYYY!!!$@ ACERTOU KKKKK',
+    'É VOCÊ MESMOOO, EMI!!!',
+    'tá, agora finge surpresa rapidinho',
+    'fiz isso aqui pra te dar parabéns do meu jeito.',
+    'FELIZ NIVER, EMI!!! agora bora pro vídeo kkkkk'
   ];
   for (let i = 0; i < lines.length; i++) {
     await delay(i === 0 ? 450 : 760);
@@ -93,7 +93,7 @@ async function openBirthday() {
     $('progress-fill').style.transform = `scaleX(${progress / 100})`;
     $('progress-percent').textContent = `${progress}%`;
   }
-  $('progress-label').textContent = 'presente desbloqueado';
+  $('progress-label').textContent = 'pronto. agora olha isso aqui ↓';
   await delay(650);
   if (currentRun !== runId) return;
   $('video-section').hidden = false;
@@ -122,7 +122,7 @@ media.addEventListener('error', () => {
 });
 $('retry-video').addEventListener('click', () => { media.load(); loadVideo(); });
 function updateSoundButton() {
-  $('sound-button').querySelector('span').textContent = media.muted ? 'assistir com som' : 'desligar som';
+  $('sound-button').querySelector('span').textContent = media.muted ? 'bota som' : 'tira o som';
   $('sound-button').setAttribute('aria-pressed', String(!media.muted));
 }
 media.addEventListener('volumechange', updateSoundButton);
@@ -150,8 +150,8 @@ $('skip-video').addEventListener('click', revealPromo);
 $('buy-button').addEventListener('click', () => {
   clearTimeout(toastTimer);
   $('purchase-response').hidden = false;
-  $('purchase-detail').textContent = 'Saldo debitado: 1 abraço. Seu azeite imaginário chega em até 3 vidas úteis.';
-  $('buy-button').textContent = 'Azeite imaginário garantido ♡';
+  $('purchase-detail').textContent = 'Pronto. Agora temos um azeite imaginário e uma dívida que também é. Tá tudo certo kkkkk.';
+  $('buy-button').textContent = 'comprei. vou jantar vento.';
   burst();
   toastTimer = setTimeout(() => { $('purchase-response').hidden = true; }, 12000);
 });
@@ -184,7 +184,7 @@ function resetMedia() {
   clearTimeout(toastTimer);
   $('purchase-response').hidden = true;
   $('video-error').hidden = true;
-  $('buy-button').innerHTML = 'Financiar meu azeite <svg class="icon"><use href="#i-arrow"/></svg>';
+  $('buy-button').innerHTML = 'Passa no crédito e reza <svg class="icon"><use href="#i-arrow"/></svg>';
 }
 $('replay-button').addEventListener('click', () => { resetMedia(); openBirthday(); });
 $('logout-button').addEventListener('click', () => {
@@ -195,7 +195,7 @@ $('logout-button').addEventListener('click', () => {
   document.body.classList.remove('pink');
   document.querySelector('meta[name="theme-color"]').content = '#151516';
   document.title = 'emi.os — uma surpresa pra você';
-  $('system-status').textContent = 'aguardando você';
+  $('system-status').textContent = 'tá por aí?';
   $('birthday-screen').hidden = true;
   $('login-screen').hidden = false;
   $('login-form').reset();
@@ -203,7 +203,7 @@ $('logout-button').addEventListener('click', () => {
   $('password').required = false;
   $('username-row').querySelector('button').hidden = false;
   $('login-error').textContent = '';
-  $('login-hint').textContent = 'digite seu usuário e pressione enter';
+  $('login-hint').textContent = 'digita aí e dá enter';
   window.scrollTo({top: 0, behavior: 'instant'});
   $('username').focus({preventScroll: true});
 });

@@ -19,4 +19,12 @@ Finish review: independent agent, one finding (mixed roman/italic video-note hea
 Waivers: numbered chapter labels express the real sequential flow; compact terminal metadata intentionally uses instrument-sized labels. Primary reading text is at least12px. No-JavaScript fallback exposes the static birthday and olive-oil content with a direct video link.
 
 ## Delivery
-Feature branch:feat/emi-birthday. GitHub PR blocked by invalid configured GitHub token. Sites source remote is a deployment mirror. Private publication uses the native Sites workflow; local dist/index.html remains usable directly. No public audience change was requested.
+Original feature branch:feat/emi-birthday. Current copy revision:feat/emi-copy-informal. GitHub authentication rechecked successfully on 2026-11-16. Current copy stays local for review; the previously published private Sites version is unchanged. No public audience change was requested.
+
+
+## Copy revision — 2026-11-16
+
+Author requested more informal, warm Brazilian Portuguese and less technical/generated phrasing. Replaced stock wishes, operating-system metaphors in body copy and generic praise with a direct welcome, lightly chaotic punctuation and conversational slang: “YAYYY!!!$@ ACERTOU KKKKK”, “finge surpresa rapidinho”, “FELIZ NIVER, EMI!!! agora bora pro vídeo kkkkk”, and the olive-oil punchline “OITO MIL. Num azeite. É mole?”. Terminal chrome remains visual decoration; instructions stay clear. Revised all error states, audio controls, replay/reset labels, the fake purchase response, footer and no-JavaScript fallback. Credentials, pricing, artwork, video and interaction logic are unchanged.
+
+
+Before merge, the author asked to remove directly intimate phrasing. The final birthday line and footer now celebrate Emi in a casual friendship tone, without declarations of affection. This updates the same open PR; no merge or publication.

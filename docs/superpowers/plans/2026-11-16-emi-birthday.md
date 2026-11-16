@@ -19,4 +19,4 @@ Incorrect login recovers; phone keyboard does not clip fields; rejected autoplay
 - [x] Copy video to dist/assets/birthday.mp4; defer source until login.
 - [x] Verify state transitions and video with browser checks, desktop/mobile captures and reduced motion.
 - [x] Commit work on the dedicated feature branch. Prepare the Sites deployment mirror and archive for private publication.
-- [ ] Open GitHub PR: blocked because the configured GitHub token is invalid. Source is retained on feat/emi-birthday.
+- [ ] Original implementation PR was not opened during the initial build. GitHub authentication was rechecked successfully; the current copy revision uses its own feature branch and PR.
